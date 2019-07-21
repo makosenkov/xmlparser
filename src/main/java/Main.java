@@ -1,15 +1,26 @@
-import org.apache.avalon.framework.configuration.ConfigurationException;
-import org.xml.sax.SAXException;
-
 import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args) throws SAXException, IOException, ConfigurationException {
+    public static void main(String[] args) {
+        String inputFileName;
+        String outputFileName = null;
+
+        if (args.length < 1 || args.length > 2) {
+            throw new IllegalArgumentException("Неверные входные параметры");
+        } else if (args.length == 1) {
+            inputFileName = args[0];
+        } else {
+            inputFileName = args[0];
+            outputFileName = args[1];
+        }
         XMLParser parser = new XMLParser();
-        parser.parse(
-            "src/main/resources/input.xml",
-            "src/main/resources/out.pdf",
-            "src/main/resources/template.xsl");
+        try {
+            parser.parse(
+                inputFileName,
+                outputFileName);
+        } catch (IOException e) {
+            System.out.println("Ошибка вывода");
+        }
     }
 }
