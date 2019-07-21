@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fop version="1.0">
+    <renderers>
+        <renderer mime="application/pdf">
+            <fonts>
+                <font embed-url="../fonts/times_new_roman.ttf" kerning="yes" sub-font="TIMES">
+                    <font-triplet name="TIMES" style="normal" weight="normal"/>
+                    <font-triplet name="TIMES-B" style="normal" weight="bold"/>
+                </font>
+                <font embed-url="../fonts/courier_new.ttf" kerning="yes" sub-font="COURIER-NEW">
+                    <font-triplet name="COURIER-NEW" style="normal" weight="normal"/>
+                    <font-triplet name="COURIER-NEW-B" style="normal" weight="bold"/>
+                </font>
+            </fonts>
+        </renderer>
+    </renderers>
+</fop>

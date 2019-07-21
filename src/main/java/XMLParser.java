@@ -10,7 +10,7 @@ import javax.xml.transform.stream.StreamSource;
 import java.io.*;
 
 public class XMLParser {
-    private static final String configPAth = "src/main/resources/fop.xml";
+    private static final String configPAth = "src/main/resources/config/fop.xml";
     private final FopFactory fopFactory;
 
     public XMLParser() throws IOException, SAXException, ConfigurationException {
