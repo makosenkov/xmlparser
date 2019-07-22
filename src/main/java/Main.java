@@ -20,7 +20,7 @@ public class Main {
                 inputFileName,
                 outputFileName);
         } catch (IOException e) {
-            System.out.println("Ошибка вывода");
+            e.printStackTrace();
         }
     }
 }

@@ -138,7 +138,7 @@
                     <condition>
                         <cnd>
                             <condition_name_id></condition_name_id>
-                            <condition_name>9873</condition_name>
+                            <condition_name>9870</condition_name>
                         </cnd>
                         <condition_id>4594</condition_id>
                     </condition>
@@ -164,7 +164,7 @@
                     <applicant-addrFlat>23</applicant-addrFlat>
                     <applicant-addrIndex>234234</applicant-addrIndex>
                 </applicant-resident_address>
-                <applicant-addrSame>checked</applicant-addrSame>
+                <applicant-addrSame>unchecked</applicant-addrSame>
                 <applicant-reg_address>
                     <applicant-addrRegIsSpbLo>true</applicant-addrRegIsSpbLo>
                     <applicant-addrRegRegion>ЛЕНИНГРАДСКАЯ ОБЛ.</applicant-addrRegRegion>
@@ -191,12 +191,12 @@
                     <applicant-identification-other-doc></applicant-identification-other-doc>
                 </applicant-identification-doc>
                 <applicant-representative>
-                    <applicant-repLastName></applicant-repLastName>
-                    <applicant-repFirstName></applicant-repFirstName>
-                    <applicant-repMiddleName></applicant-repMiddleName>
+                    <applicant-repLastName>Ольгерд</applicant-repLastName>
+                    <applicant-repFirstName>фон</applicant-repFirstName>
+                    <applicant-repMiddleName>Эверек</applicant-repMiddleName>
                     <applicant-repBirthDate></applicant-repBirthDate>
-                    <applicant-repResidentAddress></applicant-repResidentAddress>
-                    <applicant-repPhone></applicant-repPhone>
+                    <applicant-repResidentAddress>Усадьба Гарин</applicant-repResidentAddress>
+                    <applicant-repPhone>+7(800)555-35-35</applicant-repPhone>
                     <applicant-rep-identification-doc-select>1</applicant-rep-identification-doc-select>
                     <applicant-repDocName></applicant-repDocName>
                     <applicant-repDocPassSeries></applicant-repDocPassSeries>
