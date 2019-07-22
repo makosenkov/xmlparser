@@ -5,12 +5,13 @@ import javax.xml.transform.*;
 import javax.xml.transform.sax.SAXResult;
 import javax.xml.transform.stream.StreamSource;
 import java.io.*;
-import java.net.URL;
+import java.net.URLDecoder;
+import java.nio.charset.StandardCharsets;
 
 public class XMLParser {
-    private static final String configPAth = "fop.xml";
-    private static final String templatePath = "template.xsl";
-    private static final String defaultName = "/default.pdf";
+    private static final String configPAth = "/fop.xml";
+    private static final String templatePath = "/template.xsl";
+    private static final String defaultName = "default.pdf";
 
     public void parse(String inputFileName,
                       String outputFileName) throws IOException {
@@ -21,10 +22,10 @@ public class XMLParser {
             throw new IllegalArgumentException("Неверный входной файл");
         }
 
-        URL configUrl = getClass().getResource(configPAth);
-        URL templateUrl = getClass().getResource(templatePath);
-        File config = new File(configUrl.getFile());
-        File template = new File(templateUrl.getFile());
+        String path = XMLParser.class.getProtectionDomain().getCodeSource().getLocation().getPath();
+        String decodedPath = URLDecoder.decode(path, StandardCharsets.UTF_8);
+        File config = new File(decodedPath + configPAth);
+        File template = new File(decodedPath + templatePath);
 
         try (OutputStream out = new BufferedOutputStream(new FileOutputStream(new File(outputFileName)))) {
             FopFactory fopFactory = FopFactory.newInstance(config);
