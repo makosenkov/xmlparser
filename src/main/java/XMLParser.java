@@ -12,7 +12,6 @@ import java.util.Date;
 public class XMLParser {
     private static final String configPAth = "fop.xml";
     private static final String templatePath = "template.xsl";
-    private static final String fontPath = "TIMES_NEW_ROMAN.TTF";
     private static final String defaultName = "/default.pdf";
 
     public void parse(String inputFileName,
@@ -47,8 +46,6 @@ public class XMLParser {
         if (res.toString().startsWith("jar:")) {
             try (InputStream input = getClass().getResourceAsStream(resource)){
                 file = Files.createTempFile(new Date().getTime()+"", ".html").toFile();
-                System.out.println(file.getPath());
-                System.out.println(new File(fontPath).getPath());
                 try (OutputStream out = new FileOutputStream(file)){
                     int read;
                     byte[] bytes = new byte[1024];

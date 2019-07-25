@@ -3,11 +3,11 @@
     <renderers>
         <renderer mime="application/pdf">
             <fonts>
-                <font embed-url="TIMES_NEW_ROMAN.TTF" kerning="yes" sub-font="TIMES">
+                <font embed-url="/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf" kerning="yes" sub-font="TIMES">
                     <font-triplet name="TIMES" style="normal" weight="normal"/>
                     <font-triplet name="TIMES-B" style="normal" weight="bold"/>
                 </font>
-                <font embed-url="COURIER_NEW.TTF" kerning="yes" sub-font="COURIER-NEW">
+                <font embed-url="/usr/share/fonts/truetype/dejavu/DejaVuSansMono.ttf" kerning="yes" sub-font="COURIER-NEW">
                     <font-triplet name="COURIER-NEW" style="normal" weight="normal"/>
                     <font-triplet name="COURIER-NEW-B" style="normal" weight="bold"/>
                 </font>
